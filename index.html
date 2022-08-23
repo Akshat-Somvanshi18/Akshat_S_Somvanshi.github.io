@@ -1,61 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="logic.js"></script>
+    <title>My_Portfolio</title>
+    <link rel="stylesheet" href="styling.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-<section id="main">
-    <img src="celebration_img.png" id="celebration_img_1">
-    <section id="sub_main">
-    <h1 id="game_name">...Tic Tac Toe...</h1>
-    <input type="text" placeholder="Enter Player A Name" id="input1">
-    <button id="buttoninput" onclick="input()">Enter</button>
-    <h1 id="msg1">Enter Player A Name</h1>
-    <h1 id="msg2">.......................................</h1>
-   
-<section id="game_section">
-    <div>
-        
-    <button id="b1"  onclick="func1() ; hello()" value="00"><img src="bs.png" id="i1"></button>
-    <button id="b2"  onclick="func2() ; hello()" value="01"><img src="bs.png" id="i2"></button>
-    <button id="b3"  onclick="func3() ; hello()" value="02"><img src="bs.png" id="i3"></button>
-</div>
-<div>
-    <button id="b4"  onclick="func4() ; hello()" value="10"><img src="bs.png" id="i4"></button>
-    <button id="b5"  onclick="func5() ; hello()" value="11"><img src="bs.png" id="i5"></button>
-    <button id="b6"  onclick="func6() ; hello()" value="12"><img src="bs.png" id="i6"></button>
-</div>
-    <div>
-    <button id="b7"  onclick="func7() ; hello()" value="20"><img src="bs.png" id="i7"></button>
-    <button id="b8"  onclick="func8() ; hello()" value="21"><img src="bs.png" id="i8"></button>
-    <button id="b9"  onclick="func9() ; hello()" value="22"><img src="bs.png" id="i9"></button>
-</div>
-<p id="aks"></p>
-<button id="reset" onclick="resetgame()">Reset Game</button> 
-<h1 id="result">Result</h1>
-</section>
-</section>
-<img src="celebration_img.png" id="celebration_img_2">
-</section>
-<audio id="myaudio1">
-    <source src="audio1.mp3" type="audio/mpeg">
-</audio>
-<audio id="myaudio2">
-    <source src="audio2.mp3" type="audio/mpeg">
-</audio>
-<audio id="myaudio3">
-    <source src="audio3.mp3" type="audio/mpeg">
-</audio>
-<audio id="myaudio4">
-    <source src="audio4.wav" type="audio/mpeg">
-</audio>
 
-     
+<body>
+
+
+    <nav id="navigation_bar">
+        <a id="logo_a" href="index.html"><img id="navigation_logo" src="logo.png"></img></a>
+        <ul id="navigation_list">
+            <a href="structure.html" ><li>Home</li></a>
+            <a href="#my_summary" ><li>About Me</li></a>
+            <a href="https://drive.google.com/file/d/1vY9DpyiQq2hb2HA9N4K3WVAXP4vFMubc/view?usp=sharing" target="_blank"><li>Resume</li></a>
+            <a href="#finish" ><li>Contact Me</li></a>
+        </ul>
+        <a href="#input"><button id="navbtn">Hire Me</button></a>
+        <button id="hamburger_button" onclick="hamburger()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        
+        </ul>
+    </nav>
+    <ul id="hamburger">
+        <a href="structure.html"><li id="li1">Home</li></a>
+        <a href="#my_summary"><li class="li">About Me</li></a>
+        <a href="#"><li class="li">Resume</li></a>
+        <a href="#finish"><li id="li4">Contact Me</li></a>
+    </ul>
+
+
+
+    <section id="section1">
+        <img src="profile-removebg-preview (1).png" id="profile">
+        <div id="write">
+            <p id="subh">Get Every Single Solution</p>
+            <h1 id="mainh1">I'm Developer</h1>
+            <h1 id="mainh2">Akshat S Somvanshi</h1>
+            
+        </div>
+    </section>
+
+
+    <section id="my_summary">
+        <h1 class="heading">...About Me...</h1>
+        <p class="s_details">Hey! , I am Akshat , B.Tech 2nd Year Student At Vellore Insititue Of Technology , Vellore in the Information Technology Department.</p>
+        <p class="s_details">I am Skilled At JAVA (Programming Language) , C++ (Programming Language) , HTML5 , CSS and Basic JAVASCRIPT.</p>
+        <p class="s_details">I Love To Learn And Design Technology While Exploring The World.</p>
+        <p class="s_details">I Am Currently Exploring Data Structures And Algorithm With A Side Pinch Of React JS.</p>
+    </section>
+
+
+    <section id="skill">
+        <h1 class="heading">...My Skills...</h1>
+        <section id="skill_button_display">
+        <button id="skill_button1" onclick="skilld1()">FrontEnd Development</button>
+        <button id="skill_button2" onclick="skilld2()">Data Structures And Algorithm</button>
+    </section>
+        <section id="skill_display1">
+        <div class="skill_display_div">
+            <img src="html.png" class="skill_img">
+            <h1>HTML</h1>
+            </div>
+            <div class="skill_display_div">
+                <img src="css.png" class="skill_img">
+                <h1>CSS</h1>
+                </div>
+        <div class="skill_display_div">
+        <img src="js.png" class="skill_img">
+        <h1>JAVASCRIPT</h1>
+        </div>
+    </section>
+
+    <section id="skill_display2">
+        <div class="abc">
+            <img src="java.png" class="skill_img">
+            <h1>JAVA</h1>
+            </div>
+            <div class="abc">
+                <img src="c++.png" class="skill_img">
+                <h1>C++</h1>
+                </div>
+    </section>
+    </section>
+
+
+    <section id="certifications">
+        <h1 class="heading">...My Certifications...</h1>
+        <section id="certification_display">
+            <div class="certification_display_div">
+            <h1><a href="https://www.hackerrank.com/certificates/826913e2bdec" target="_blank" class="name_link">CSS (Cascading Style Sheet)</a></h1>
+            <p ><a href="https://www.linkedin.com/company/hackerrank/" class="c_company">Hackerrank</a></p>
+            <p class="c_details">Issued Aug 2022 : No Expiration Date</p>
+            <p class="c_details">Credential ID : 826913E2BDEC</p>
+            <a href="https://www.hackerrank.com/certificates/826913e2bdec" target="_blank"><button class="round_button">Show Credentials</button></a>
+            </div>
+
+            <div class="certification_display_div">
+            <h1><a href="https://www.lumoslearning.com/llwp/student-certificate-view.html?certificateid=02294fc813128bc8638109f7bf930261#" target="_blank" class="name_link">HTML</a></h1>
+            <p ><a href="https://www.linkedin.com/company/lumos-learning-india-pvt-ltd/" class="c_company">Lumos Learning India Pvt Ltd</a></p>
+            <p class="c_details">Issued Aug 2022 : No Expiration Date</p>
+            <p class="c_details">Credential ID : 02294fc813128bc8368109f7bf930261</p>
+            <a href="https://www.lumoslearning.com/llwp/student-certificate-view.html?certificateid=02294fc813128bc8638109f7bf930261#" target="_blank"><button class="round_button">Show Credentials</button></a>
+            </div>
+        </section>
+    </section>
+
     
+
+
+    
+    
+    <section id="about">
+    <div id="aboutme_prior">
+        <h1 class="heading">...My Offered Services...</h1>
+        <p>Designing With Passion While Exploring The World.</p>
+    </div>
+    <section id="aboutme">
+        
+            <div>
+                <img id="s1" src="s1.png">
+                <p id="s1text">Web Development</p>
+            </div>
+        
+        
+            <div>
+                <img id="s2" src="s2.png">
+                <p id="s2text">Data Structures</p>
+            </div>
+        
+        
+            <div>
+                <img id="s3" src="s3.png">
+                <p id="s3text">Digital Marketing</p>
+            </div>
+        
+    </section>
+</section>
+
+<section id="project">
+
+    <h1 class="heading">...Projects...</h1>
+    <section id="project_display">
+    <div class="project_display_div">
+        <h1><a href="https://akshat1618.github.io/Calculator.github.io/" target="_blank" class="name_link">Simple Calculator</a></h1>
+        <p class="p_details">July , 2022 - July , 2022</p>
+        <p class="p_details">Tech Used : HTML5 , CSS , JAVASCRIPT</p>
+        <a href="https://akshat1618.github.io/Calculator.github.io/" target="_blank"><button class="round_button">Show Project</button></a>
+    </div>
+    <div class="project_display_div">
+    <h1><a href="https://akshat1618.github.io/tic_tac_toe.github.io/" target="_blank" class="name_link">Tic Tac Toe Game</a></h1>
+    <p class="p_details">Aug , 2022 - Aug , 2022</p>
+    <p class="p_details">Tech Used : HTML5 , CSS , JAVASCRIPT</p>
+    <a href="https://akshat1618.github.io/tic_tac_toe.github.io/" target="_blank"><button class="round_button">Show Project</button></a>
+</div>
+<div class="project_display_div">
+    <h1><a href="https://akshat1618.github.io/Akshat_S_Somvanshi.github.io/" target="_blank" class="name_link">Personal Portfolio Website</a></h1>
+    <p class="p_details">June , 2022 - Aug , 2022</p>
+    <p class="p_details">Tech Used : HTML5 , CSS , JAVASCRIPT</p>
+    <a href="https://akshat1618.github.io/Akshat_S_Somvanshi.github.io/" target="_blank"><button class="round_button">Show Project</button></a>
+</div>
+</section>
+
+</section>
+
+
+
+<section id="input">
+<div>
+    <h1 id="inputmsg1">If Not Now, When?</h1> 
+    <h1 id="inputmsg2">Let’s Work Together!</h1>
+    <img id="inputimg" src="sign.png">
+    <h3 id="inputmsg3"></h3>
+    <h3 id="inputmsg4"></h3>
+</div>
+<form>
+    <label for="inputform"></label>
+<p><input type="text" name="inputform" placeholder="Your Full Name" id="name" onkeyup="uppercase()"></p>
+<p><input type="email" name="inputform" placeholder="Email Address" id="email" ></p>
+<p><textarea name="inputform" id="message" placeholder="Your Message" rows="7" cols="52" onkeyup="uppercase()"></textarea></p>
+<button type="button" onclick="akshat()">Submit</button>
+</form>
+</section>
+
+
+
+<p id="hidden"> </p>
+    <section id="finish">
+        <a id="logo_b" href="#"><img id="finish_logo" src="logo.png"></img></a>
+
+        <p id="finishpara1">akshatsingh0920021816@gmail.com</p>
+        <p id="finishpara2">613/10 Sant Kabir Nagar,Lucknow-226020</p>
+        <p id="finishpara3">Stay Connected :</p>
+
+        <div>
+            <a href="https://www.snapchat.com/add/akshat1618?share_id=lLW3FbVUafQ&locale=en-US" class="fa fa-snapchat" style="font-size:36px" target="_blank"></a>
+            <a href="https://twitter.com/akshat1816" class="fa fa-twitter" style="font-size:36px" target="_blank"></a>
+            <a href="https://www.facebook.com/profile.php?id=100012084014376" class="fa fa-facebook" style="font-size:36px" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/akshat-s-somvanshi-8651a2219/" class="fa fa-linkedin" style="font-size:36px" target="_blank"></a>
+            <a href="https://www.instagram.com/_._akshat_/?hl=en" class="fa fa-instagram" style="font-size:36px" target="_blank"></a>
+        </div>
+    </section>
+
+
+   
+
+
+
 </body>
+
 </html>
