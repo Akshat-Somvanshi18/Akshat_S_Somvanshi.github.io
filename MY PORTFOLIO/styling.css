@@ -1,0 +1,675 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+.heading{
+    font-family: 'Arima', cursive;
+    text-shadow: 2px 2px rgb(184, 180, 180);
+    padding: 10px 0px;
+    
+}
+
+.name_link{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+.name_link:hover{
+    text-decoration: underline;
+    color: rgb(51, 51, 167);
+}
+
+.round_button{
+    margin-top:7px;
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #ff8818;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Arima', cursive;
+    box-shadow: 0px 8px grey;
+}
+.round_button:active{
+    box-shadow: 0px 3px grey;
+    transition: translateY(8px);
+}
+.round_button:hover{
+    background-color: rgb(190, 28, 3);
+    left: 100px;
+    
+}
+
+
+#navigation_bar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    background-color: #d7d6d6f5; 
+}
+#navigation_logo{
+    width: 65px;
+    margin-right: 50px;
+    margin-left: 20px;
+   
+}
+#navigation_list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#navigation_list a{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 2px 20px;
+    text-decoration: none;
+    color: black;
+}
+#navigation_list a:hover{
+    color: rgb(190, 28, 3);
+}
+#navbtn{
+    width: 80px;
+    height: 30px;
+    color: white;
+    background-color: #ff8818;
+    border-style: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+#navbtn:hover{
+    cursor: pointer;
+    background-color: rgb(190, 28, 3);
+    font-weight: lighter;
+}
+#hamburger_button{
+    cursor: pointer;
+    border: 0px;
+    display: none;
+    margin-right: 15px;
+}
+
+
+#navigation_bar button div{
+    width: 30px;
+    height: 5px;
+    margin-bottom: 3px;
+    background-color: black;
+}
+#hamburger{
+    background-color: #d7d6d6f5;
+    position: sticky;
+    top: 55px;
+    display: none;
+   
+}
+
+
+#hamburger a{
+    font-size: 2px;
+    text-decoration: none;
+    text-align: center;
+    animation-name: hamburger;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes hamburger {
+    to{
+        font-size: 18px;
+    }
+    
+}
+
+#li1{
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-family: 'Arima', cursive;
+    font-weight: bolder;
+    color: black;
+}
+.li{
+    margin: 5px 0px;
+    font-family: 'Arima', cursive;
+    font-weight: bolder;
+    color: black;
+}
+#li4{
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-family: 'Arima', cursive;
+    font-weight: bolder;
+    color: black;
+}
+#li1:hover , .li:hover , #li4:hover{
+    color: rgb(190, 28, 3);
+    background-color: #e3e3e3f5;
+}
+ @media screen and (max-width:650px) {
+    #navigation_list{
+        display: none;
+    }
+    #navbtn{
+        display: none;
+    }
+    #hamburger_button{
+        display: block;
+    }
+    #navigation_bar{
+        justify-content: space-between;
+    }
+
+    
+ }
+
+
+
+
+#section1{
+    background: url("bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#profile{
+    width: 350px;
+}
+#write{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 2px;
+    animation-name: learnmore;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes learnmore {
+    to{
+        font-size: 18px;
+    }
+    
+
+}
+#subh{
+    
+    font-family: 'Arima', cursive;
+    padding-bottom: 20px;
+    color: black;
+    font-weight: bold;
+    
+    
+}
+
+#mainh1 , #mainh2{
+    font-family: 'Arima', cursive;
+    text-shadow: 2px 2px #c3c3c3;
+    padding-bottom:20px;
+    
+}
+
+
+
+#my_summary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px;
+    background-color: #fffafb;
+}
+.s_details{
+    font-family: 'Arima', cursive;
+    color: black;
+    font-weight: bold;
+    
+
+}
+@media screen and (max-width:900px) {
+
+    .s_details{
+        font-size: 10px;
+    }
+    
+}
+@media screen and (max-width:570px) {
+
+    .s_details{
+        font-size: 8px;
+    }
+    
+}
+@media screen and (max-width:455px) {
+
+    .s_details{
+        font-size: 4.8px;
+    }
+    
+}
+#skill{
+    text-align: center;
+}
+#skill_button_display{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+#skill_button1 , #skill_button2{
+    width: 260px;
+    height: 50px;
+    font-size: 18.72px;
+    font-family: 'Arima', cursive;
+    font-weight: bolder;
+    border: 0px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+#skill_button1{
+    border-bottom: 1px solid black;
+}
+
+#skill_button1:hover , #skill_button2:hover{
+    background-color: rgb(222, 220, 220);
+}
+
+@media screen and (max-width:501px) {
+    #skill_button1 , #skill_button2{
+        font-size: 12px;
+    }
+    
+}
+
+
+#skill_display1{
+    
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    
+}
+
+.skill_img{
+    width: 10px;
+    animation-name: akshat;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transition:transform 1s;
+}
+@keyframes akshat {
+    to{
+        width: 100px;
+    }
+    
+}
+.skill_img:hover{
+    transform: rotateZ(360deg);
+}
+#skill_display2{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    display: none;
+    padding: 20px 0px;
+}
+
+
+#skill div{
+    text-align: center;
+    font-family: 'Arima', cursive; 
+}
+
+
+
+#certifications{
+    text-align: center;
+    padding: 30px 0px;
+    font-family: 'Arima', cursive;
+    background-color: rgb(255, 252, 248);
+   
+}
+
+
+
+#certification_display{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    font-family: 'Arima', cursive;
+    padding-top: 10px;
+}
+#certification_display div{
+    padding: 15px 0px;
+    cursor: pointer;
+}
+.certification_display_div{
+    animation-name: div_animation2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.certification_display_div:hover{
+    animation-name: div_animation;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes div_animation {
+    to{
+        border-bottom: 1px solid grey;
+        border-top: 1px solid grey;
+        border-radius: 20px;
+        font-size: 21px;
+        box-shadow:  5px 5px rgba(255, 165, 165, 0.324);
+    }
+    
+}
+
+
+.c_company{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.c_company:hover{
+    text-decoration: underline;
+    color: rgb(51, 51, 167);
+}
+#c_company{
+    font-size: 17px;
+    padding-top:7px ;
+    padding-bottom: 7px;
+    font-family: 'Arima', cursive;
+}
+.c_details{
+    font-size: 13px;
+    font-family: 'Arima', cursive;
+    font-weight: bolder;
+    color: #b3aeae;
+}
+
+
+#project{
+    text-align: center;
+    padding: 30px 0px;
+    background-color:#fffafb ;
+
+}
+#project_display{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: 'Arima', cursive;
+    margin-top: 30px;
+}
+#project_display div{
+    padding: 15px 0px;
+}
+.project_display_div{
+    animation-name: div_animation2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;   
+
+}
+.project_display_div:hover{
+    animation-name: div_animation;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+@keyframes div_animation2 {
+    to{
+        border-bottom: 0px;
+        border-top: 0px;
+        font-size: 15px;
+    }
+    
+}
+
+
+
+#about{
+    margin-bottom: 20px;
+}
+#aboutme_prior{
+    padding: 30px 10px;
+    text-align: center;
+}
+
+
+#aboutme_prior p{
+    font-family: 'Arima', cursive;
+    padding: 10px 0px;
+    font-weight: bold;
+    color: #0c9f17;
+}
+#aboutme{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#aboutme div{
+    padding: 15px 0px;
+}
+#aboutme a{
+    text-decoration: none;
+}
+#s1 , #s2 , #s3{
+    width: 100px;
+    
+}
+#s1{
+    padding-top: 30px;
+    padding-left: 30px;
+}
+#s2{
+    padding-left: 10px;
+}
+#s3{
+    padding-left: 20px;
+}
+
+#s1text{
+    padding-top: 20px;
+    font-family: 'Arima', cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+#s2text{
+    padding-top: 25px;
+    font-family: 'Arima', cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+#s3text{
+    padding-top: 10px;
+    font-family: 'Arima', cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+#s1link,#s2link,#s3link {
+
+    padding: 5px 5px;
+ }
+
+
+
+
+#input{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 150px;
+    flex-wrap: wrap;
+    background-color: #fffafb;
+    margin-bottom: 20px;
+}
+#input div{
+    padding: 20px 0px;
+}
+
+#inputmsg1,#inputmsg2,#inputmsg3 , #inputmsg4{
+    font-family: 'Arima', cursive;
+    padding-left: 15px;
+    
+}
+#input img{
+    width: 210px;
+    padding-top: 30px;
+}
+#input form input{
+    background-color:white;
+    color: grey;
+    border: 0;
+    font-family: 'Arima', cursive;
+    font-weight: bolder;
+    border-radius: 5px;
+    padding: 2px 12px;
+}
+#input form textarea{
+    background-color: white;
+    color: grey;
+    border: 0;
+    font-family: 'Arima', cursive;
+    font-weight: bolder;
+    border-radius: 5px;
+    padding: 10px 12px;
+}
+#name{
+    width: 350px;
+    height: 40px;
+    text-align: center;
+}
+
+#email{
+    width: 350px;
+    height: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+#message{
+    margin-top: 20px;
+    text-align: center;
+}
+#input button{
+    width: 380px;
+    height: 40px;
+    margin-top: 20px;
+    color: white;
+    background-color: #ff8818;
+    border-style: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Arima', cursive;
+}
+#input button:hover{
+    cursor: pointer;
+    background-color: rgb(190, 28, 3);
+    
+}
+
+@keyframes input_animation {
+    from{
+        font-size: 2px;
+    }
+    to{
+        font-size: 20px;
+    }
+    
+}
+
+#inputmsg1 , #inputmsg2 , #inputmsg3 , #inputmsg4{
+    text-shadow: 2px 2px #c3c3c3;
+}
+
+
+#finish{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(74 73 73);
+}
+#finish_logo{
+    width: 200px;
+    height: 150px;
+    padding: 50px 10px;
+}
+#finishpara1{
+    font-size: 30px;
+    padding: 15px 0px;
+    font-family: 'Arima', cursive;
+    font-weight: bold;
+    
+
+}
+@media screen and (max-width:534px){
+    #finishpara1{
+        font-size: 15px;
+    }
+    #finishpara2{
+        font-size: 5px;
+    }
+    #finishpara3{
+        font-size: 8px;
+    }
+    #finish_logo{
+        width: 100px;
+        height: 50px;
+    }
+    
+}
+#finishpara2{
+    font-size: 15px;
+    padding: 15px 0px;
+    font-family: 'Arima', cursive;
+    color: white;
+    font-weight: bold;
+}
+#finishpara3{
+    font-family: 'Arima', cursive;
+    color: white;
+    font-weight: bold;
+}
+.fa{
+    padding: 10px 10px;
+    text-decoration: none;
+    color: black;
+}
+  
+  .fa:hover {
+    cursor: pointer;
+      opacity: 0.4;
+  }
+  
+
+  @keyframes button_animation {
+    to{
+        width:10px;
+        border-radius: 50px;
+    }
+    
+  }
+ 
